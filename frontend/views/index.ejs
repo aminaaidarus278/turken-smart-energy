@@ -1,278 +1,602 @@
 <%- include('partials/header') %>
 
 <!-- SECTION 1: HERO -->
-<section class="section section-dark" style="padding: 8rem 0 7rem 0; background: linear-gradient(rgba(11, 19, 43, 0.88), rgba(2, 6, 23, 0.95)), url('/images/hero-bg.jpg') center/cover no-repeat;">
-  <div class="container text-center">
-    <p class="section-subtitle">Global Petroleum Trading & Energy Infrastructure</p>
-    <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.15; margin-bottom: 1.5rem; color: #FFFFFF;">
+<section class="hero-section">
+  <div class="container">
+    <p class="hero-subtitle">TURKEN SMART ENERGY LTD.</p>
+    <h1 class="hero-title">
       ENERGY THAT MOVES MARKETS.<br>
-      <span class="text-green">SOLUTIONS THAT POWER THE FUTURE.</span>
+      <span class="text-green">SOLUTIONS THAT POWER<br>THE FUTURE.</span>
     </h1>
-    <p class="text-muted" style="max-width: 750px; margin: 0 auto 2.5rem auto; font-size: 1.1rem;">
-      Turken Smart Energy Ltd. is a premier Kenya-based energy enterprise delivering institutional-grade petroleum trading, seamless global logistics, and sustainable smart energy technology across Africa and international markets.
+    <p class="hero-lead">Smart Energy Solutions & Global Petroleum Trading</p>
+    <p class="hero-description">
+      We connect global energy supply with growing markets through reliable petroleum products, strategic sourcing and innovative energy solutions.
     </p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="#products" class="btn btn-primary">Explore Products</a>
-      <a href="#contact" class="btn btn-outline">Request Commercial Quote</a>
+    
+    <div class="hero-cta-group">
+      <a href="#products" class="btn btn-primary hero-btn-explore">Explore Our Products →</a>
+      <a href="#contact" class="btn btn-outline hero-btn-quote">Request a Quote</a>
+    </div>
+
+    <!-- Hero 4 Quick Feature Badges (Bottom Right) -->
+    <div class="hero-badges-wrapper">
+      <div class="hero-badges-grid">
+        <div class="hero-badge-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <strong class="hero-badge-text">PETROLEUM<br>PRODUCTS</strong>
+        </div>
+        <div class="hero-badge-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <strong class="hero-badge-text">SMART<br>ENERGY</strong>
+        </div>
+        <div class="hero-badge-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <strong class="hero-badge-text">GLOBAL<br>MARKETS</strong>
+        </div>
+        <div class="hero-badge-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg>
+          <strong class="hero-badge-text">SUSTAINABLE<br>FUTURE</strong>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SUCCESS NOTIFICATION (if form submitted) -->
-<% if (typeof successMessage !== 'undefined' && successMessage) { %>
-  <div style="background-color: rgba(16, 185, 129, 0.15); border: 1px solid var(--brand-green); padding: 1rem; text-align: center; color: var(--brand-green); font-weight: 600;">
-    <%= successMessage %>
-  </div>
-<% } %>
-
-<!-- SECTION 2: WHO WE ARE (ABOUT) -->
-<section id="who-we-are" class="section">
+<!-- SECTION 2: WHO WE ARE -->
+<section id="who-we-are" class="who-we-are-section">
   <div class="container">
-    <div class="grid grid-2" style="align-items: center;">
+    <div class="who-we-are-grid">
+      
       <div>
-        <p class="section-subtitle">Who We Are</p>
-        <h2 class="section-title">Reliable, Market-Led Energy Infrastructure</h2>
-        <p class="text-muted" style="margin-bottom: 1rem;">
-          Turken Smart Energy Ltd. stands as a trusted counterparty in fuel supply chains and renewable energy solutions. We bridge the gap between global energy producers and commercial, industrial, and public sector consumers.
+        <p class="section-subtitle-sm">Who We Are</p>
+        <h2 class="who-we-are-title">
+          POWERING CONNECTIONS.<br>BUILDING PARTNERSHIPS.
+        </h2>
+        <p class="who-we-are-p">
+          Turken Smart Energy Ltd. is an international energy company focused on petroleum products trading, energy supply and smart energy solutions.
         </p>
-        <p class="text-muted" style="margin-bottom: 1.5rem;">
-          Headquartered in Kenya, our operational footprint leverages strategic maritime and land logistics networks to guarantee uninterrupted fuel delivery, strict quality control, and competitive market pricing.
+        <p class="who-we-are-p who-we-are-p-last">
+          From our base in Kenya, we work to connect established suppliers with qualified buyers across East Africa, the Horn of Africa and selected international markets.
         </p>
-        <ul style="list-style: none;">
-          <li style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong style="color: #FFF;">• Uncompromising Quality:</strong> Strict adherence to ISO standards.</li>
-          <li style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong style="color: #FFF;">• Supply Chain Security:</strong> Reliable CIF & FOB vessel delivery schedules.</li>
-          <li style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong style="color: #FFF;">• Environmental Stewardship:</strong> Integrating low-emission fuels & renewable tech.</li>
-        </ul>
+        <a href="#products" class="btn btn-primary btn-sm-inline">Explore Our Products →</a>
       </div>
-      <div class="card" style="padding: 0; overflow: hidden; border: 1px solid var(--border-color); border-radius: 8px;">
-        <img src="/images/about-us.jpg" alt="Petroleum Logistics & Infrastructure" style="width: 100%; height: 380px; object-fit: cover; display: block;">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECTION 3: WHAT WE DO (CORE DIVISIONS) -->
-<section id="what-we-do" class="section section-dark">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-subtitle">What We Do</p>
-      <h2 class="section-title">Integrated Energy Solutions</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3 style="color: var(--brand-green); margin-bottom: 0.75rem;">01. Petroleum Trading</h3>
-        <p class="text-muted">Direct bulk trading and sourcing of refined petroleum products including EN590 Automotive Gas Oil, Jet A-1, Heavy Fuel Oil, and Gasoline.</p>
+      <div class="who-we-are-img-wrapper">
+        <img src="/images/about-us.jpg" alt="Turken Storage Tank" class="who-we-are-img">
       </div>
-      <div class="card">
-        <h3 style="color: var(--brand-green); margin-bottom: 0.75rem;">02. Smart Energy Systems</h3>
-        <p class="text-muted">Deployment of commercial microgrids, battery energy storage systems (BESS), and digital energy monitoring infrastructure.</p>
-      </div>
-      <div class="card">
-        <h3 style="color: var(--brand-green); margin-bottom: 0.75rem;">03. Supply & Logistics</h3>
-        <p class="text-muted">End-to-end maritime chartering, pipeline distribution, depot storage management, and overland fleet transportation.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECTION 4: PRODUCT GRID -->
-<section id="products" class="section">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-subtitle">Our Portfolio</p>
-      <h2 class="section-title">Refined Petroleum & Fuel Products</h2>
-    </div>
-    <div class="grid grid-4">
-      <div class="card">
-        <h4 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.5rem;">EN590 Diesel (10PPM)</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Ultra-low sulfur diesel designed for modern high-efficiency automotive and industrial engines.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.5rem;">Automotive Gas Oil (AGO)</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">High-performance diesel fuel tailored for heavy transportation, generators, and industrial machinery.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.5rem;">Motor Gasoline (PMS)</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Premium unleaded gasoline formulated for optimal engine output and vehicle fuel economy.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.5rem;">Aviation Fuel (Jet A-1)</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Fully certified jet kerosene meeting international civil and military aviation requirements.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 5: SMART & RENEWABLE ENERGY -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="grid grid-2" style="align-items: center;">
-      <div class="card" style="padding: 0; overflow: hidden; border: 1px solid var(--border-color); border-radius: 8px;">
-        <img src="/images/smart-energy.jpg" alt="Smart Energy Infrastructure" style="width: 100%; height: 350px; object-fit: cover; display: block;">
-      </div>
-      <div>
-        <p class="section-subtitle">Innovation & Sustainability</p>
-        <h2 class="section-title">Smart Energy & Transition Solutions</h2>
-        <p class="text-muted" style="margin-bottom: 1rem;">
-          Turken Smart Energy actively drives the energy transition across Africa by engineering hybrid renewable systems that lower carbon intensity while maintaining uninterrupted uptime.
-        </p>
-        <div class="grid grid-2" style="margin-top: 1rem;">
-          <div class="card" style="padding: 1rem;">
-            <h4 style="color: #FFF; margin-bottom: 0.25rem;">Solar PV Hybrids</h4>
-            <p class="text-muted" style="font-size: 0.8rem;">Rooftop & utility solar integrated with existing networks.</p>
+      <div class="who-we-are-values-col">
+        <div class="value-item">
+          <div class="value-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
-          <div class="card" style="padding: 1rem;">
-            <h4 style="color: #FFF; margin-bottom: 0.25rem;">BESS Storage</h4>
-            <p class="text-muted" style="font-size: 0.8rem;">Industrial battery storage for backup reliability.</p>
+          <div>
+            <h4 class="value-heading">Our Vision</h4>
+            <p class="value-text">To be a leading African energy partner connecting global resources with growing markets.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div>
+            <h4 class="value-heading">Our Mission</h4>
+            <p class="value-text">To deliver reliable energy, competitive solutions and trusted partnerships through professionalism, transparency and long-term relationships.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4 class="value-heading">Our Values</h4>
+            <p class="value-text">Reliability | Transparency | Integrity | Professionalism | Sustainability</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- SECTION 6: MARKETS & COVERAGE -->
-<section id="markets" class="section">
-  <div class="container text-center">
-    <p class="section-subtitle">Global Reach</p>
-    <h2 class="section-title">Markets We Serve</h2>
-    <p class="text-muted" style="max-width: 650px; margin: 0 auto 2.5rem auto;">
-      Headquartered in Kenya with sourcing networks spanning Europe, the Middle East, and Asia, Turken Smart Energy serves diverse market sectors:
-    </p>
-    <div class="grid grid-3">
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Mining & Heavy Industry</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Bulk fuel deliveries directly to remote mine sites and industrial manufacturing plants.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Transport & Logistics Fleets</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Dedicated fuel supply contracts for commercial haulage, marine vessels, and railway operators.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Governments & Utilities</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Strategic reserve replenishment and national utility power generation supply.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 7: TRADING PROCESS -->
-<section id="process" class="section section-dark">
+<!-- SECTION 3: OUR CORE BUSINESSES -->
+<section id="what-we-do" class="core-businesses-section">
   <div class="container">
-    <div class="text-center">
-      <p class="section-subtitle">Execution Excellence</p>
-      <h2 class="section-title">Our 6-Step Sourcing & Trading Workflow</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card"><strong class="text-green">Step 01</strong><h4 style="color:#FFF; margin: 0.5rem 0;">ICPO & Requirement</h4><p class="text-muted" style="font-size:0.85rem;">Client submits Irrevocable Corporate Purchase Order (ICPO) with exact specs.</p></div>
-      <div class="card"><strong class="text-green">Step 02</strong><h4 style="color:#FFF; margin: 0.5rem 0;">FCO & Soft Probe</h4><p class="text-muted" style="font-size:0.85rem;">Full Corporate Offer issued along with banking details verification.</p></div>
-      <div class="card"><strong class="text-green">Step 03</strong><h4 style="color:#FFF; margin: 0.5rem 0;">Contract Execution</h4><p class="text-muted" style="font-size:0.85rem;">Sales and Purchase Agreement (SPA) signed by both counterparties.</p></div>
-      <div class="card"><strong class="text-green">Step 04</strong><h4 style="color:#FFF; margin: 0.5rem 0;">Proof of Product (POP)</h4><p class="text-muted" style="font-size:0.85rem;">SGS inspection report and refinery allocation documents issued.</p></div>
-      <div class="card"><strong class="text-green">Step 05</strong><h4 style="color:#FFF; margin: 0.5rem 0;">Logistics & Loading</h4><p class="text-muted" style="font-size:0.85rem;">Vessel loading and pipeline injection verified by independent surveyors.</p></div>
-      <div class="card"><strong class="text-green">Step 06</strong><h4 style="color:#FFF; margin: 0.5rem 0;">Delivery & Settlement</h4><p class="text-muted" style="font-size:0.85rem;">CIF/FOB port discharge completed against LC / MT103 financial instruments.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 8: WHY CHOOSE US -->
-<section class="section">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-subtitle">Competitive Advantage</p>
-      <h2 class="section-title">Why Industry Leaders Partner With Us</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Transparent Pricing</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Clear pricing formulas linked directly to global benchmarks like Platts and Argus.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Strict Quality Control</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Every metric ton tested and verified by SGS/Intertek prior to discharge.</p>
-      </div>
-      <div class="card">
-        <h4 style="color: #FFF; margin-bottom: 0.5rem;">Structured Trade Finance</h4>
-        <p class="text-muted" style="font-size: 0.85rem;">Flexible payment terms utilizing LC, SBLC, and DLC financial structures.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 9: ESG & SUSTAINABILITY -->
-<section class="section section-dark">
-  <div class="container text-center">
-    <p class="section-subtitle">Corporate Responsibility</p>
-    <h2 class="section-title">ESG & Sustainability Focus</h2>
-    <p class="text-muted" style="max-width: 700px; margin: 0 auto;">
-      Turken Smart Energy Ltd. is committed to operating with high standards of environmental responsibility, social impact, and corporate governance. We prioritize ultra-low sulfur fuels and support community energy access projects across East Africa.
-    </p>
-  </div>
-</section>
-
-<!-- SECTION 10: PARTNERS & NETWORKS -->
-<section class="section">
-  <div class="container text-center">
-    <p class="section-subtitle">Global Strategic Alliances</p>
-    <h2 class="section-title">Our Operational Network</h2>
-    <p class="text-muted" style="margin-bottom: 2rem;">Working with Tier-1 refiners, international tank storage operators, and global maritime fleets.</p>
-    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; color: var(--text-muted); font-weight: 700;">
-      <span>GLOBAL REFINERIES</span> • <span>INDEPENDENT STORAGE DEPOTS</span> • <span>MARITIME FLEETS</span> • <span>SGS QUALITY SURVEYORS</span>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 11: CALL TO ACTION -->
-<section class="section section-dark" style="background-color: var(--brand-card);">
-  <div class="container text-center">
-    <h2 style="color: #FFF; font-size: 2.2rem; margin-bottom: 1rem;">Ready to Secure Your Energy Supply Chain?</h2>
-    <p class="text-muted" style="margin-bottom: 2rem;">Contact our commercial trading desk today to request specifications, quotes, or trade terms.</p>
-    <a href="#contact" class="btn btn-primary" style="font-size: 1rem; padding: 1rem 2rem;">Initiate Commercial Discussion</a>
-  </div>
-</section>
-
-<!-- SECTION 12: CONTACT & INQUIRY FORM -->
-<section id="contact" class="section">
-  <div class="container">
-    <div class="grid grid-2">
+    <div class="core-businesses-grid">
       <div>
-        <p class="section-subtitle">Contact Us</p>
-        <h2 class="section-title">Commercial Trading Desk</h2>
-        <p class="text-muted" style="margin-bottom: 2rem;">
-          Submit your product specification request or trade inquiry directly to our corporate team.
-        </p>
-        <p style="color: #FFF; margin-bottom: 0.5rem;"><strong>Office:</strong> Kenya</p>
-        <p style="color: #FFF; margin-bottom: 0.5rem;"><strong>Email:</strong> info@turkensmartenergy.com</p>
-        <p style="color: #FFF;"><strong>Phone:</strong> +254 799 966 999</p>
+        <p class="section-subtitle-sm">Our Core Businesses</p>
+        <h2 class="core-businesses-title">ONE ENERGY PARTNER.<br>MULTIPLE SOLUTIONS.</h2>
+        <p class="core-businesses-description">We provide a focused range of energy products and services designed to support businesses, industries and growing markets.</p>
+        <a href="#services" class="btn btn-primary btn-sm-inline btn-mt-1">Explore All Services →</a>
       </div>
 
-      <!-- FORM SUBMISSION HANDLED BY POST /contact ROUTE -->
-      <form action="/contact" method="POST" class="card">
-        <h3 style="color: #FFF; margin-bottom: 1.5rem;">Request Product Quote</h3>
-        <div style="margin-bottom: 1rem;">
-          <input type="text" name="name" placeholder="Full Name / Company Representative" required style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;">
+      <div class="core-cards-grid">
+        <div class="core-card">
+          <img src="/images/about-us.jpg" alt="Petroleum Products" class="core-card-img">
+          <div class="core-card-content">
+            <div class="core-card-icon-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFF"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h5 class="core-card-title">PETROLEUM PRODUCTS</h5>
+            <p class="core-card-text">• EN590 Diesel<br>• AGO<br>• Gasoline / Petrol<br>• Jet Fuel<br>• Other Refined Products</p>
+          </div>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-          <input type="email" name="email" placeholder="Corporate Email" required style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;">
-          <input type="tel" name="phone" placeholder="Phone Number" style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;">
+
+        <div class="core-card">
+          <img src="/images/hero-bg.jpg" alt="Global Energy Trading" class="core-card-img">
+          <div class="core-card-content">
+            <div class="core-card-icon-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFF"><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h5 class="core-card-title">GLOBAL ENERGY TRADING</h5>
+            <p class="core-card-text">International sourcing and supply of energy commodities.</p>
+          </div>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-          <select name="product" style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;">
-            <option value="EN590 Diesel">EN590 Diesel</option>
-            <option value="AGO">Automotive Gas Oil (AGO)</option>
-            <option value="Gasoline">Motor Gasoline (PMS)</option>
-            <option value="Jet A-1">Jet A-1 Aviation Fuel</option>
-            <option value="Smart Solutions">Smart Energy Infrastructure</option>
-          </select>
-          <input type="text" name="quantity" placeholder="Metric Tons / Volume" style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;">
+
+        <div class="core-card">
+          <img src="/images/smart-energy.jpg" alt="Smart Energy Solutions" class="core-card-img">
+          <div class="core-card-content">
+            <div class="core-card-icon-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFF"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h5 class="core-card-title">SMART ENERGY SOLUTIONS</h5>
+            <p class="core-card-text">Energy-efficient and technology-driven solutions for industry and business.</p>
+          </div>
         </div>
-        <div style="margin-bottom: 1.5rem;">
-          <textarea name="message" rows="4" placeholder="Additional details (Target Port, Incoterms, ICPO specs...)" style="width: 100%; padding: 0.75rem; background: var(--brand-navy); border: 1px solid var(--border-color); color: #FFF; border-radius: 4px;"></textarea>
+
+        <div class="core-card">
+          <img src="/images/smart-energy.jpg" alt="Renewable Energy" class="core-card-img">
+          <div class="core-card-content">
+            <div class="core-card-icon-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFF"><path d="M11 20A7 7 0 0 1 9.8 6.1"/></svg>
+            </div>
+            <h5 class="core-card-title">RENEWABLE ENERGY</h5>
+            <p class="core-card-text">Solar and other sustainable energy solutions.</p>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Official Inquiry</button>
-      </form>
+
+        <div class="core-card">
+          <img src="/images/about-us.jpg" alt="Energy Logistics" class="core-card-img">
+          <div class="core-card-content">
+            <div class="core-card-icon-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFF"><rect x="1" y="3" width="15" height="13"/></svg>
+            </div>
+            <h5 class="core-card-title">ENERGY LOGISTICS</h5>
+            <p class="core-card-text">Supporting efficient movement and delivery of energy products to strategic markets.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SECTION 13: FOOTER PARTIAL -->
+<!-- SECTION 4: OUR PETROLEUM PRODUCTS -->
+<section id="products" class="products-section">
+  <div class="container">
+    <div class="products-header">
+      <div>
+        <p class="section-subtitle-sm margin-0">Our Petroleum Products</p>
+        <h2 class="products-title">QUALITY PRODUCTS. GLOBAL STANDARDS.</h2>
+        <p class="products-description">We source and supply petroleum products according to agreed commercial, technical and delivery requirements.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm-inline">View All Products →</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="/images/about-us.jpg" alt="EN590 Diesel" class="product-card-img">
+        <div class="product-card-content">
+          <h5 class="product-card-title">EN590 DIESEL</h5>
+          <p class="product-card-text">Quality diesel fuel for transportation, industrial and commercial use.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/images/about-us.jpg" alt="AGO" class="product-card-img">
+        <div class="product-card-content">
+          <h5 class="product-card-title">AGO</h5>
+          <p class="product-card-text">Automotive Gas Oil for transportation and industrial applications.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/images/hero-bg.jpg" alt="Gasoline / Petrol" class="product-card-img">
+        <div class="product-card-content">
+          <h5 class="product-card-title">GASOLINE / PETROL</h5>
+          <p class="product-card-text">Petroleum products supplied according to agreed specifications.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/images/hero-bg.jpg" alt="Jet Fuel" class="product-card-img">
+        <div class="product-card-content">
+          <h5 class="product-card-title">JET FUEL</h5>
+          <p class="product-card-text">Aviation fuel sourcing for qualified requirements.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/images/about-us.jpg" alt="Other Products" class="product-card-img">
+        <div class="product-card-content">
+          <h5 class="product-card-title">OTHER PRODUCTS</h5>
+          <p class="product-card-text">We can evaluate additional energy product requirements based on buyer specifications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: MARKETS & WHY TURKEN -->
+<section id="markets" class="markets-section">
+  <div class="container">
+    <div class="markets-grid">
+      
+      <div>
+        <p class="section-subtitle-sm">Our Markets</p>
+        <h2 class="markets-title">CONNECTING GLOBAL SUPPLY WITH STRATEGIC MARKETS.</h2>
+        <p class="markets-description">Our commercial focus includes growing energy markets where reliable supply and professional trading relationships are essential.</p>
+
+        <div class="markets-content-wrapper">
+          <div class="map-graphic">
+             <svg viewBox="0 0 100 100" width="120" height="120"><path d="M30 20 Q50 10 70 30 T50 80 T20 50 Z" fill="#10B981" opacity="0.85"/></svg>
+          </div>
+          <div class="markets-list">
+            <div>
+              <strong class="market-region"><span class="dot-green">●</span> East Africa</strong>
+              <p class="market-countries">Kenya • Tanzania • Uganda<br>Rwanda • Ethiopia</p>
+            </div>
+            <div>
+              <strong class="market-region"><span class="dot-blue">●</span> Horn of Africa</strong>
+              <p class="market-countries">Somalia • Djibouti • Ethiopia<br>and surrounding markets</p>
+            </div>
+            <div>
+              <strong class="market-region"><span class="dot-slate">●</span> International Markets</strong>
+              <p class="market-countries">We work with qualified international counterparties and evaluate opportunities based on product, volume, destination, logistics and commercial terms.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-sm-inline btn-mt-125">View Our Markets →</a>
+      </div>
+
+      <div class="why-turken-card">
+        <h3 class="why-turken-title">Why Turken</h3>
+        <p class="why-turken-subtitle">BUILT ON TRUST. DRIVEN BY ENERGY.</p>
+
+        <div class="why-turken-list">
+          <div class="why-item">
+            <div class="why-icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong class="why-heading">RELIABILITY</strong>
+              <span class="why-subtext">Dependable sourcing and execution.</span>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            </div>
+            <div>
+              <strong class="why-heading">TRANSPARENCY</strong>
+              <span class="why-subtext">Clear communication and responsible engagement.</span>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <div>
+              <strong class="why-heading">GLOBAL CONNECTIONS</strong>
+              <span class="why-subtext">Buyers, suppliers and partners worldwide.</span>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg>
+            </div>
+            <div>
+              <strong class="why-heading">PROFESSIONAL EXECUTION</strong>
+              <span class="why-subtext">Aligned documentation and delivery.</span>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
+            </div>
+            <div>
+              <strong class="why-heading">LONG-TERM PARTNERSHIPS</strong>
+              <span class="why-subtext">Sustainable commercial relationships.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: PROCESS STEPPER WITH TANKER SHIP IMAGE -->
+<section id="process" class="process-section">
+  <div class="container">
+    <div class="process-grid">
+      
+      <!-- Left Tanker Ship Image -->
+      <div class="process-img-wrapper">
+        <img src="/images/hero-bg.jpg" alt="Energy Tanker Ship" class="process-img">
+      </div>
+
+      <!-- Right Steps Flow -->
+      <div>
+        <div class="process-header">
+          <p class="process-main-heading">Our Trading & Supply Process</p>
+          <p class="section-subtitle-sm margin-0">FROM REQUIREMENT TO DELIVERY.</p>
+        </div>
+
+        <div class="process-steps-flow">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <h6 class="step-title">REQUIREMENT</h6>
+            <p class="step-desc">Product, quantity, destination, terms.</p>
+          </div>
+          <span class="step-arrow">→</span>
+
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <h6 class="step-title">SOURCING</h6>
+            <p class="step-desc">Identify suitable supply opportunities.</p>
+          </div>
+          <span class="step-arrow">→</span>
+
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <h6 class="step-title">VERIFICATION</h6>
+            <p class="step-desc">Commercial and counterparty review.</p>
+          </div>
+          <span class="step-arrow">→</span>
+
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <h6 class="step-title">STRUCTURING</h6>
+            <p class="step-desc">Price, specifications, terms and payment.</p>
+          </div>
+          <span class="step-arrow">→</span>
+
+          <div class="process-step">
+            <span class="step-num">05</span>
+            <h6 class="step-title">CONTRACTING</h6>
+            <p class="step-desc">Agreements and documentation.</p>
+          </div>
+          <span class="step-arrow">→</span>
+
+          <div class="process-step">
+            <span class="step-num">06</span>
+            <h6 class="step-title">DELIVERY</h6>
+            <p class="step-desc">Shipment and delivery arrangements.</p>
+          </div>
+
+          <div class="process-summary-box">
+            <strong class="process-summary-text">SMARTER TRADING.<br>CLEARER COMMUNICATION.<br>BETTER EXECUTION.</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: THREE COLUMN INFORMATION ROW -->
+<section class="info-row-section">
+  <div class="container">
+    <div class="info-row-grid">
+      
+      <!-- Company at a Glance -->
+      <div class="info-card">
+        <h4 class="info-card-heading">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
+          Company at a Glance
+        </h4>
+        <div class="glance-grid">
+          <div>
+            <span class="glance-label">● CORE BUSINESS</span>
+            Energy Trading & Supply
+          </div>
+          <div>
+            <span class="glance-label">● KEY SECTORS</span>
+            Petroleum • Smart Energy • Renewable Energy
+          </div>
+          <div>
+            <span class="glance-label">● HEADQUARTERS</span>
+            Kenya
+          </div>
+          <div>
+            <span class="glance-label">● BUSINESS MODEL</span>
+            B2B Energy Trading & Strategic Partnerships
+          </div>
+          <div>
+            <span class="glance-label">● MARKET FOCUS</span>
+            East Africa & International Markets
+          </div>
+          <div>
+            <span class="glance-label">● APPROACH</span>
+            Reliable • Transparent • Professional
+          </div>
+        </div>
+      </div>
+
+      <!-- Strategic Partners -->
+      <div class="info-card info-card-flex">
+        <div>
+          <h4 class="info-card-heading">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
+            Strategic Partners
+          </h4>
+          <p class="partners-subtext">We build long-term partnerships with:</p>
+          
+          <div class="partners-grid">
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><path d="M3 21h18"/></svg><br>Energy Producers</div>
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><path d="M12 2v20"/></svg><br>Trading Partners</div>
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><path d="M22 12H2"/></svg><br>Logistics Jet Fuels</div>
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/></svg><br>Logistics Partners</div>
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/></svg><br>Commercial Buyers</div>
+            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg><br>Technology Partners</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-partner">Partner With Us →</a>
+      </div>
+
+      <!-- Smart & Renewable Energy -->
+      <div class="info-card info-card-card flex-between padding-0">
+        <div class="smart-energy-padding">
+          <h4 class="smart-energy-title">Smart & Renewable Energy</h4>
+          <p class="smart-energy-subtitle">Beyond petroleum — Toward a smarter energy future.</p>
+          <p class="smart-energy-desc">We are developing opportunities across smart energy, energy efficiency and renewable solutions to support businesses and communities.</p>
+          <a href="#contact" class="btn btn-primary btn-sm-inline">Explore Smart Energy →</a>
+        </div>
+        <img src="/images/smart-energy.jpg" alt="Smart Energy" class="smart-energy-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: SUSTAINABILITY & CTA BANNERS -->
+<section class="banners-section">
+  <div class="banners-grid">
+    
+    <!-- Left Green Sustainability Banner -->
+    <div class="banner-sustainability">
+      <p class="section-subtitle-sm text-green mb-02">Sustainability</p>
+      <h3 class="sustainability-heading">ENERGY WITH A LONG-TERM PERSPECTIVE.</h3>
+      <p class="sustainability-desc">We support responsible energy development and the global transition toward more efficient and sustainable energy systems.</p>
+      
+      <div class="sustainability-features">
+        <div class="text-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg><br>Energy Efficiency</div>
+        <div class="text-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><br>Renewable Energy</div>
+        <div class="text-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg><br>Responsible Business</div>
+        <div class="text-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1"/></svg><br>Long-Term Development</div>
+      </div>
+    </div>
+
+    <!-- Right Dark CTA Banner -->
+    <div class="banner-cta">
+      <h3 class="cta-heading">HAVE AN ENERGY REQUIREMENT?</h3>
+      <p class="cta-desc">Let's build the right energy solution.</p>
+      <div class="cta-btn-group">
+        <a href="#contact" class="btn btn-primary btn-cta">Request a Quotation →</a>
+        <a href="#contact" class="btn btn-outline btn-cta">Contact Our Team</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 9: CONTACT & INQUIRY -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      
+      <!-- Left: Contact Details & Info -->
+      <div>
+        <p class="section-subtitle-sm">Get In Touch</p>
+        <h2 class="contact-title">START A CONVERSATION WITH OUR ENERGY TEAM.</h2>
+        <p class="contact-lead">
+          Whether you require petroleum product supply, custom logistics structuring, or smart energy partnerships, our market specialists are ready to discuss your requirements.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-icon-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <strong class="contact-info-label">Head Office</strong>
+              <p class="contact-info-value">Nairobi, Kenya</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong class="contact-info-label">Direct Email</strong>
+              <p class="contact-info-value"><a href="mailto:info@turkensmartenergy.com">info@turkensmartenergy.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong class="contact-info-label">Phone Inquiry</strong>
+              <p class="contact-info-value">+254 (0) 700 000 000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Quotation & Contact Form -->
+      <div class="contact-form-card">
+        <h3 class="form-title">Request a Quotation</h3>
+        <p class="form-subtitle">Fill out the form below and our trading desk will respond promptly.</p>
+
+        <form action="/contact" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" required placeholder="Energy Logistics Ltd">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" required placeholder="name@company.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+254 ...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="productInterest">Product / Service Interest *</label>
+            <select id="productInterest" name="productInterest" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="EN590 Diesel">EN590 Diesel</option>
+              <option value="Automotive Gas Oil (AGO)">Automotive Gas Oil (AGO)</option>
+              <option value="Gasoline / Petrol">Gasoline / Petrol</option>
+              <option value="Jet Fuel">Jet Fuel</option>
+              <option value="Smart Energy Solutions">Smart Energy Solutions</option>
+              <option value="Renewable Energy">Renewable Energy</option>
+              <option value="Strategic Partnership">Strategic Partnership</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Requirement Details *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Please state target volumes, destination port/location, and required terms..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">Submit Request →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <%- include('partials/footer') %>
