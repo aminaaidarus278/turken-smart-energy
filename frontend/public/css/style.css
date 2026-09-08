@@ -433,6 +433,31 @@ body {
   background-color: #f8fafc;
 }
 
+.products-section .section-header h2 {
+  color: #0f172a !important; /* Dark navy heading */
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.products-section .section-subtitle {
+  color: #059669 !important; /* Green accent matching your current layout */
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.products-section .section-description {
+  color: #334155 !important; /* Dark slate gray body text */
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
